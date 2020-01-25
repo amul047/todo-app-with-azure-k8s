@@ -1,2 +1,7 @@
 deploy/terraform/terraform.tfstate
 deploy/terraform/.terraform/
+src/toDoUpdatesApi/.vs/
+src/toDoUpdatesApi/obj/
+src/toDoUpdatesApi/bin/
+src/toDoUpdatesApi/Properties/launchSettings.json
+src/toDoUpdatesApi/toDoUpdatesApi.sln
