@@ -5,3 +5,6 @@ src/toDoUpdatesApi/obj/
 src/toDoUpdatesApi/bin/
 src/toDoUpdatesApi/Properties/launchSettings.json
 src/toDoUpdatesApi/toDoUpdatesApi.sln
+src/UpdatesApi/obj/
+src/UpdatesApi/.vs/
+src/UpdatesApi/bin/
