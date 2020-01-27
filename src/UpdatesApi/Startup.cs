@@ -44,6 +44,7 @@ namespace UpdatesApi
             services.AddScoped<IToDoItemUpdateRepository, ToDoItemUpdateRepository>();
             services.AddScoped<IToDoItemCreationRequestService, ToDoItemCreationRequestService>();
             services.AddScoped<IToDoItemUpdateRequestService, ToDoItemUpdateRequestService>();
+            services.AddScoped<IToDoItemDeleteRequestService, ToDoItemDeleteRequestService>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
