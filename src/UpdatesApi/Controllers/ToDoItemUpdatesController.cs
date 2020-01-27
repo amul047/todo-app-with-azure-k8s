@@ -20,13 +20,12 @@ namespace UpdatesApi.Controllers
             _toDoItemUpdateRequestService = toDoItemUpdateRequestService;
         }
 
-
         /// <summary>
         /// Request creation of a to do item
         /// </summary>
         /// <param name="toDoItemVm">To do item</param>
         [HttpPost]
-        public void Create(ToDoItemVm toDoItemVm)
+        public void RequestCreationOfToDoItem(ToDoItemVm toDoItemVm)
         {
             _toDoItemCreationRequestService.Execute(toDoItemVm);
         }
@@ -37,7 +36,7 @@ namespace UpdatesApi.Controllers
         /// <param name="toDoItemId">To do item id</param>
         /// <param name="toDoItemVm">To do item</param>
         [HttpPut("{toDoItemId}")]
-        public void Create([FromRoute] int toDoItemId, ToDoItemVm toDoItemVm)
+        public void RequestUpdateOfToDoItem([FromRoute] int toDoItemId, ToDoItemVm toDoItemVm)
         {
             _toDoItemUpdateRequestService.Execute(toDoItemId, toDoItemVm);
         }
