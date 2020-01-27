@@ -8,13 +8,13 @@ namespace UpdatesApi.Services
 {
     public class ToDoItemUpdateRequestService : IToDoItemUpdateRequestService
     {
-        private readonly IToDoItemUpdateRepository _toDoUpdateRepository;
+        private readonly IToDoItemUpdateRepository _toDoItemUpdateRepository;
         private readonly IMapper _mapper;
 
-        public ToDoItemUpdateRequestService(IToDoItemUpdateRepository toDoUpdateRepository,
+        public ToDoItemUpdateRequestService(IToDoItemUpdateRepository toDoItemUpdateRepository,
             IMapper mapper)
         {
-            _toDoUpdateRepository = toDoUpdateRepository;
+            _toDoItemUpdateRepository = toDoItemUpdateRepository;
             _mapper = mapper;
         }
 
@@ -22,7 +22,7 @@ namespace UpdatesApi.Services
         {
             var toDoItemUpdate = _mapper.Map<ToDoItemUpdate>(toDoItemVm);
             toDoItemUpdate.ItemId = toDoItemId;
-            _toDoUpdateRepository.Update(toDoItemUpdate);
+            _toDoItemUpdateRepository.Update(toDoItemUpdate);
         }
     }
 }

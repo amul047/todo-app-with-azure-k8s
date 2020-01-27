@@ -13,11 +13,15 @@ namespace UpdatesApi.Controllers
     {
         private readonly IToDoItemCreationRequestService _toDoItemCreationRequestService;
         private readonly IToDoItemUpdateRequestService _toDoItemUpdateRequestService;
+        private readonly IToDoItemDeleteRequestService _toDoItemDeleteRequestService;
 
-        public ToDoItemUpdatesController(IToDoItemCreationRequestService toDoItemCreationRequestService, IToDoItemUpdateRequestService toDoItemUpdateRequestService)
+        public ToDoItemUpdatesController(IToDoItemCreationRequestService toDoItemCreationRequestService, 
+            IToDoItemUpdateRequestService toDoItemUpdateRequestService,
+            IToDoItemDeleteRequestService toDoItemDeleteRequestService)
         {
             _toDoItemCreationRequestService = toDoItemCreationRequestService;
             _toDoItemUpdateRequestService = toDoItemUpdateRequestService;
+            _toDoItemDeleteRequestService = toDoItemDeleteRequestService;
         }
 
         /// <summary>
@@ -39,6 +43,16 @@ namespace UpdatesApi.Controllers
         public void RequestUpdateOfToDoItem([FromRoute] int toDoItemId, ToDoItemVm toDoItemVm)
         {
             _toDoItemUpdateRequestService.Execute(toDoItemId, toDoItemVm);
+        }
+        
+        /// <summary>
+        /// Request update to remove an to do item
+        /// </summary>
+        /// <param name="toDoItemId">To do item id</param>
+        [HttpDelete("{toDoItemId}")]
+        public void RequestRemovalOfToDoItem([FromRoute] int toDoItemId)
+        {
+            _toDoItemDeleteRequestService.Execute(toDoItemId);
         }
     }
 }
