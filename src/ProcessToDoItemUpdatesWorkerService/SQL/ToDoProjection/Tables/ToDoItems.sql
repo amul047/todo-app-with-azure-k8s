@@ -1,0 +1,14 @@
+﻿IF (NOT EXISTS (SELECT 1
+                 FROM INFORMATION_SCHEMA.TABLES 
+                 WHERE TABLE_SCHEMA = 'dbo' 
+                 AND  TABLE_NAME = 'ToDoItems'))
+BEGIN
+    
+	CREATE TABLE dbo.ToDoItems(
+		[Id] INT NOT NULL IDENTITY(1,1),
+		[Title] VARCHAR(100) NULL,
+		[State] VARCHAR(10) NULL,
+		CONSTRAINT [PK_ToDoItems] PRIMARY KEY CLUSTERED(Id ASC)
+	);
+
+END

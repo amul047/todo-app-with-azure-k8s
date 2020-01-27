@@ -8,3 +8,6 @@ src/toDoUpdatesApi/toDoUpdatesApi.sln
 src/UpdatesApi/obj/
 src/UpdatesApi/.vs/
 src/UpdatesApi/bin/
+src/ProcessToDoItemUpdatesWorkerService/.vs/
+src/ProcessToDoItemUpdatesWorkerService/bin/
+src/ProcessToDoItemUpdatesWorkerService/obj/
