@@ -11,3 +11,6 @@ src/UpdatesApi/bin/
 src/ProcessToDoItemUpdatesWorkerService/.vs/
 src/ProcessToDoItemUpdatesWorkerService/bin/
 src/ProcessToDoItemUpdatesWorkerService/obj/
+src/ItemsApi/.vs/
+src/ItemsApi/bin/
+src/ItemsApi/obj/
