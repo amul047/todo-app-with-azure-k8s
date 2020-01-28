@@ -11,4 +11,6 @@ Attempt to make database as a service dependency using helm| 5
 Creating to do item updates (requests to create or update a todo item) API | 2.5
 Creating a worker service that transform the data to readable projection| 3
 Deploying worker service with helm | 0.5
+Creating a to do items API | 2
+
 
