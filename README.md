@@ -12,7 +12,7 @@ Create, update, read and delete to do items
   * SQL database to store the change events :heavy_exclamation_mark: as a managed service by Azure, not via Helm
   * .NET core API to capture updates (events) for read to do items :heavy_check_mark:
   * .NET core service worker to action these changes :heavy_check_mark:
-  * .NET core API to read the to do items (projections)
+  * .NET core API to read the to do items (projections) :heavy_check_mark: - http://todoitemsapi.australiaeast.azurecontainer.io/
   * Front end application in vue.js to capture the to do items
 * Write the solution summary and update URL
 * Give permissions to GitHub repository
@@ -24,6 +24,10 @@ Create, update, read and delete to do items
 * Adding authentication and authorisation
 * Moving database credentials to secrets
 * Use messaging instead of polling to decrease infrastructure costs
+* Update helm deploy to deal with dependant deployments
+  * SQL database server is currently managed
+  * API to read items is currently on managed Azure Container Service
+
 
 
 
