@@ -1,0 +1,11 @@
+title Manage to do items
+
+Application->Updates API: POST ToDoItemUpdates
+Application->Updates API: PUT ToDoItemUpdates/{ToDoItemId}
+Application->Updates API: DELETE ToDoItemUpdates/{ToDoItemId}
+Updates API->Updates Database: INSERT
+Updates Database->Worker Service: SELECT
+Worker Service->Items Database: INSERT
+Worker Service->Items Database: UPDATE
+Application->Items API: GET ToDoItems
+Items API->Items Database: SELECT
