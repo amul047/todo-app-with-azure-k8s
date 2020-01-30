@@ -31,3 +31,5 @@ When a user creates, updates or deletes to do items through the application, it 
 * Update helm deploy to deal with dependent deployments
   * SQL database server is currently managed
   * API to read items is currently on managed Azure Container Service
+* Update CORS policy on the updates API so the application can call it
+
