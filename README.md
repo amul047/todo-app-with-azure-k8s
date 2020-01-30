@@ -12,7 +12,7 @@ When a user creates, updates or deletes to do items through the application, it 
 * Create an AKS cluster using Terraform :heavy_check_mark: - todokubernetescluster-8319726c.hcp.australiaeast.azmk8s.io
 * Create and deploy the following components into the AKS cluster using Helm :heavy_check_mark:
   * SQL database to store the change events :heavy_exclamation_mark: - aamirtodo.database.windows.net
-  * .NET core API to capture updates (events) for read to do items :heavy_check_mark:
+  * .NET core API to capture updates (events) for read to do items :heavy_check_mark: - http://23.101.213.122/
   * .NET core service worker to action these changes :heavy_check_mark:
   * .NET core API to read the to do items (projections) :heavy_exclamation_mark: - http://todoitemsapi.australiaeast.azurecontainer.io/
   * Front end application in vue.js to capture the to do items
