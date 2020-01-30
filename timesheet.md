@@ -15,7 +15,8 @@ Creating a to do items API | 2
 Another attempt to create netwroking that allows both APIs to be exposed from same cluster | 3
 Writing solution summary | 1
 Building a vue application | 4.5
-Deploying a vue application with container service | 
+Deploying a vue application with container service | 0.5
+
 
 
 

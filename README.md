@@ -2,6 +2,7 @@
 Create, update, read and delete to do items
 
 ## Application URL
+http://managemytodo.australiaeast.azurecontainer.io:8080/#/ - Note that this is not production ready, but emphasises the design and works by redirecting to swagger documentation of the updates API.
 
 ## Solution summary
 When a user creates, updates or deletes to do items through the application, it propagates through the various components  to the to do items database. The application constantly fetches (could be pushed) the to do items that have been propagated. User, therefore, can see the to do items updating as he/she interacts with the application.
@@ -19,8 +20,7 @@ When a user creates, updates or deletes to do items through the application, it 
 * Write the solution summary :heavy_check_mark:
 * Give collaborator permissions to GitHub repository :heavy_check_mark:
 * Give read permissions to Azure resource groups :heavy_check_mark:
-* Update application URL
-* Email back with link to GitHub
+* Update application URL :heavy_check_mark:
 
 ## Technical debt:
 * Deploying SQL instance as a service in AKS cluster

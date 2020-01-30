@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1><img class="main" src="@/assets/add.png"/>To do items</h1>        
+    <h1><a href="http://23.101.213.122/index.html"><img class="main" src="@/assets/add.png"/></a>To do items</h1>        
     <b-table bordered striped :items="toDoItems" :fields="displayColumns" show-empty>
     
       <!-- A virtual column -->
