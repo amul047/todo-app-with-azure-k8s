@@ -16,7 +16,7 @@ When a user creates, updates or deletes to do items through the application, it 
   * .NET core API to capture updates (events) for read to do items :heavy_check_mark: - http://23.101.213.122/
   * .NET core service worker to action these changes :heavy_check_mark:
   * .NET core API to read the to do items (projections) :heavy_exclamation_mark: - http://todoitemsapi.australiaeast.azurecontainer.io/
-  * Front end application in vue.js to capture the to do items
+  * Front end application in vue.js to capture the to do items :heavy_exclamation_mark: - http://managemytodo.australiaeast.azurecontainer.io:8080/#/
 * Write the solution summary :heavy_check_mark:
 * Give collaborator permissions to GitHub repository :heavy_check_mark:
 * Give read permissions to Azure resource groups :heavy_check_mark:
